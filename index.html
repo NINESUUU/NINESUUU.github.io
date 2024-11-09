@@ -1,86 +1,241 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile-pic-container">
-                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            </div>
-            <h1><B><font size=6>รัชชานนท์ คำสัตย์</font></B><br></h1>
-            <h2>DEVELOPER</h2>
-        </header>
-
-        <!-- Main Content Section -->
-        <main class="main-content">
-            <!-- Left Column -->
-            <section class="left-column">
-                <!-- Profile Section -->
-                <div class="profile-section card">
-                    <h3><B><font size=3>โปรไฟล์</font></B></h3>
-                    <p>I am studying and practicing coding skills at the undergraduate level...</p>
-                </div>
-
-                <!-- Contact Section -->
-                <div class="contact-section card">
-                    <h3><B><font size=3>ช่องทางการติดต่อ</font></B></h3>
-                    <p>📞 080-146-1604</p>
-                    <p>📧 66025234@up.ac.th</p>
-                    <p>🏠 54 หมู่ 3 ต.บ้านไร่ อ.ลาดยาว จ.นครสวรรค์ 60150</p>
-                </div>
-
-                <!-- Skills Section -->
-                <div class="skills-section card">
-                    <h3><B><font size=3>ทักษะและความสามารถ</font></B></h3>
-                    <ul>
-                        <li>การแก้ไขปัญหา</li>
-                        <li>ความคิดสร้างสรรค์</li>
-                        <li>การทำงานเป็นทีม</li>
-                    </ul>
-                    <h3><B><font size=3>ทักษะด้านภาษา</font></B></h3>
-                    <ul>
-                        <li>C</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Right Column -->
-            <section class="right-column">
-                <!-- Program Section -->
-                <div class="program-section card">
-                    <h3><B><font size=3>โปรแกรมที่ถนัด</font></B></h3>
-                    <ul>
-                        <li>Photoshop</li>
-                        <li>Canva</li>
-                        <li>Microsoft (Word, Excel)</li>
-                    </ul>
-                </div>
-
-                <!-- Hobbies Section -->
-                <div class="hobbies-section card">
-                    <h3><B><font size=3>งานอดิเรก</font></B></h3>
-                    <ul>
-                        <li>กีฬา</li>
-                        <li>ดูหนัง</li>
-                        <li>เล่นเกม</li>
-                    </ul>
-                </div>
-
-                <!-- Education Section -->
-                <div class="education-section card">
-                    <h3><B><font size=3>การศึกษา</font></B></h3>
-                    <p>2017 - 2020 โรงเรียนลาดยาววิทยาคม สายวิทย์-คณิต</p>
-                    <p>2023 - 2024 ปริญญาตรี มหาวิทยาลัยพะเยา สาขา Computer Science</p>
-                </div>
-            </section>
-        </main>
+<html>
+ <head>
+  <title>
+   Resume
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .header h2 {
+            font-size: 24px;
+            color: #f28b30;
+            margin: 0;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            background-color: #f28b30;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 0 10px 0;
+        }
+        .section p {
+            margin: 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .contact-info, .skills, .education, .languages, .software, .hobbies {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-info div, .skills div, .education div, .languages div, .software div, .hobbies div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info i, .skills i, .education i, .languages i, .software i, .hobbies i {
+            color: #f28b30;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar div {
+            height: 10px;
+            background-color: #f28b30;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <h1>
+     รัชชานนท์ คำสัตย์
+    </h1>
+    <h2>
+     DEVELOPER
+    </h2>
+   </div>
+   <div class="profile-pic">
+    <img alt="Profile picture of a person sitting by a tree near a lake" height="200" src="https://storage.googleapis.com/a1aa/image/gezYFfeqdYSniJUluP3Z6ITcQHpGFkIezgRE75qfLjAmdu6dC.jpg" width="200"/>
+   </div>
+   <div class="section">
+    <h3>
+     โปรไฟล์
+    </h3>
+    <p>
+     I am studying and practicing coding skills at the undergraduate level. It focuses on developing and creating an understanding of the basics of program development. as well as solving problems with various coding languages to prepare for the application of knowledge in related fields in the future.
+    </p>
+   </div>
+   <div class="section contact-info">
+    <h3>
+     ช่องทางการติดต่อ
+    </h3>
+    <div>
+     <i class="fas fa-phone">
+     </i>
+     080-146-1604
     </div>
-</body>
+    <div>
+     <i class="fas fa-envelope">
+     </i>
+     66025234@up.ac.th
+    </div>
+    <div>
+     <i class="fas fa-home">
+     </i>
+     54 หมู่ 3 ต.บ้านไร่ อ.ลาดยาว จ.นครสวรรค์ 60150
+    </div>
+   </div>
+   <div class="section skills">
+    <h3>
+     ทักษะและความสามารถ
+    </h3>
+    <div>
+     การแก้ไขปัญหา
+     <div class="progress-bar">
+      <div style="width: 80%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     ความคิดสร้างสรรค์
+     <div class="progress-bar">
+      <div style="width: 70%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     การทำงานเป็นทีม
+     <div class="progress-bar">
+      <div style="width: 90%;">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section languages">
+    <h3>
+     ทักษะด้านภาษา
+    </h3>
+    <div>
+     C
+     <div class="progress-bar">
+      <div style="width: 90%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     JAVA
+     <div class="progress-bar">
+      <div style="width: 60%;">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section software">
+    <h3>
+     โปรแกรมที่ถนัด
+    </h3>
+    <div>
+     Photo shop
+     <div class="progress-bar">
+      <div style="width: 70%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     Canva
+     <div class="progress-bar">
+      <div style="width: 80%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     Microsoft (Word, Excel)
+     <div class="progress-bar">
+      <div style="width: 90%;">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section education">
+    <h3>
+     การศึกษา
+    </h3>
+    <div>
+     <i class="fas fa-graduation-cap">
+     </i>
+     2017 - 2020 โรงเรียนลาดยาววิทยาคม สายวิทย์ - คณิต
+    </div>
+    <div>
+     <i class="fas fa-graduation-cap">
+     </i>
+     2023 - 2024 ปริญญาตรี มหาวิทยาลัยพะเยา สาขา Computer since
+    </div>
+   </div>
+   <div class="section hobbies">
+    <h3>
+     งานอดิเรก
+    </h3>
+    <div>
+     กีฬา
+     <div class="progress-bar">
+      <div style="width: 70%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     ดูหนัง
+     <div class="progress-bar">
+      <div style="width: 80%;">
+      </div>
+     </div>
+    </div>
+    <div>
+     เล่นเกมส์
+     <div class="progress-bar">
+      <div style="width: 90%;">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
