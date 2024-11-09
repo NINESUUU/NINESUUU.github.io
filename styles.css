@@ -7,6 +7,15 @@ body {
     color: #333;
 }
 
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* รูปโปรไฟล์ */
 .profile-pic-container {
     text-align: center;
@@ -18,16 +27,7 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #468a63;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #468a63; /* สีกรอบ */
 }
 
 /* Header Styles */
