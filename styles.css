@@ -1,105 +1,189 @@
+/* รีเซ็ตค่าเริ่มต้น */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #fef7e1, #dbe9ff);
     color: #333;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
 }
 
+/* ส่วนหัว */
 .header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .header h1 {
     font-size: 2.5em;
-    color: #333;
+    color: #ff8c00;
+    font-weight: 700;
 }
 
 .subtitle {
     font-size: 1.2em;
-    color: #c69c6d;
-    font-weight: bold;
+    color: #888;
 }
 
+/* ส่วนโปรไฟล์ */
 .profile-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
-    border: 2px solid #c69c6d;
+    border: 5px solid #ff8c00;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
 }
 
 .profile-text h2 {
     font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+    color: #00509e;
+    font-weight: 600;
 }
 
-.contact-section, .details-section, .education-section, .hobbies-section {
-    margin-bottom: 30px;
-}
-
-.contact-section h2, .details-section h2, .education-section h2, .hobbies-section h2 {
-    font-size: 1.5em;
-    color: #333;
-    border-bottom: 2px solid #c69c6d;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 10px;
+.profile-text p {
     font-size: 1em;
     color: #555;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
+/* ช่องทางการติดต่อ */
+.contact-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-size: 1.5em;
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-section li {
+    margin-bottom: 5px;
+}
+
+/* ส่วนข้อมูลทักษะและรายละเอียด */
 .details-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .section {
-    flex: 1;
-    margin-right: 15px;
-    min-width: 200px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #ff8c00;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-    color: #c69c6d;
+    font-size: 1.2em;
+    color: #ff8c00;
+    margin-bottom: 8px;
 }
 
-p, li {
-    line-height: 1.6;
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+/* ส่วนการศึกษา */
+.education-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-section h2 {
+    font-size: 1.5em;
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.education-section ul {
+    list-style-type: none;
+}
+
+.education-section li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* งานอดิเรก */
+.hobbies-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hobbies-section h2 {
+    font-size: 1.5em;
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.hobbies-section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobbies-section li {
+    background-color: #ff8c00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* การเพิ่มลูกเล่น */
+ul li::before {
+    content: "• ";
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
