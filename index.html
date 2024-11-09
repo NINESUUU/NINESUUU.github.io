@@ -31,12 +31,14 @@
             </ul>
         </div>
 
-        <div class="skills-section">
-            <h3>ทักษะและความสามารถ</h3>
-            <p>การแก้ไขปัญหา</p>
-            <p>ความคิดสร้างสรรค์</p>
-            <p>การทำงานเป็นทีม</p>
-        </div>
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg border-l-4 border-orange-400">
+            <h2 className="text-xl font-bold mb-4 text-orange-600">ทักษะและความสามารถ</h2>
+            <div className="space-y-2">
+              <SkillBar label="การแก้ไขปัญหา" value={90} color="orange" />
+              <SkillBar label="ความคิดสร้างสรรค์" value={85} color="orange" />
+              <SkillBar label="การทำงานเป็นทีม" value={95} color="orange" />
+            </div>
+          </div>
 
         <div class="languages-section">
             <h3>ทักษะด้านภาษา</h3>
