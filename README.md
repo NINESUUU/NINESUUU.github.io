@@ -17,7 +17,6 @@ const DeveloperProfile = () => {
               />
             </div>
           </div>
-
           {/* Skills Section */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-4">ทักษะและความสามารถ</h2>
@@ -27,7 +26,6 @@ const DeveloperProfile = () => {
               <SkillBar label="การทำงานเป็นทีม" value={95} />
             </div>
           </div>
-
           {/* Language Skills */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-4">ทักษะด้านภาษา</h2>
@@ -36,7 +34,6 @@ const DeveloperProfile = () => {
               <SkillBar label="JAVA" value={70} />
             </div>
           </div>
-
           {/* Software Skills */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-4">โปรแกรมที่ถนัด</h2>
@@ -47,7 +44,6 @@ const DeveloperProfile = () => {
             </div>
           </div>
         </div>
-
         {/* Right Column */}
         <div className="space-y-6">
           {/* Header */}
@@ -55,7 +51,6 @@ const DeveloperProfile = () => {
             <h1 className="text-4xl font-bold mb-4">รัชชานนท์ คำสัตย์</h1>
             <h2 className="text-xl text-gray-600 mb-4">DEVERLOPER</h2>
           </div>
-
           {/* Profile */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-2">โปรไฟล์</h2>
@@ -63,7 +58,6 @@ const DeveloperProfile = () => {
               I am studying and practicing coding skills at the undergraduate level. It focuses on developing and creating an understanding of the basics of program development. as well as solving problems with various coding languages to prepare for the application of knowledge in related fields in the future.
             </p>
           </div>
-
           {/* Contact */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-4">ช่องทางการติดต่อ</h2>
@@ -82,7 +76,6 @@ const DeveloperProfile = () => {
               </div>
             </div>
           </div>
-
           {/* Education */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-4">การศึกษา</h2>
@@ -109,7 +102,6 @@ const DeveloperProfile = () => {
               </div>
             </div>
           </div>
-
           {/* Hobbies */}
           <div className="bg-[#f8e4d6] rounded-lg p-4">
             <h2 className="text-xl font-bold mb-4">งานอดิเรก</h2>
