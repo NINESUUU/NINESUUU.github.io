@@ -1,70 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Resume - รัชนานท์ คำสัตย์</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <h1>รัชนานท์ คำสัตย์</h1>
-            <h2>Developer</h2>
-        </div>
+            <p class="subtitle">Developer</p>
+        </header>
         
-        <div class="profile-section">
+        <section class="profile-section">
             <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
             <div class="profile-text">
-                <h3>โปรไฟล์</h3>
-                <p>I am studying and practicing coding skills at the undergraduate level. It focuses on developing and creating an understanding of the basics of program development, as well as solving problems with various coding languages to prepare for the application of knowledge in related fields in the future.</p>
+                <h2>โปรไฟล์</h2>
+                <p>ฉันกำลังศึกษาวิชาเขียนโค้ดในระดับปริญญาตรี โดยมุ่งเน้นในการพัฒนาทักษะพื้นฐานทางการเขียนโปรแกรมและแก้ไขปัญหาด้วยภาษาต่าง ๆ เพื่อเตรียมความพร้อมสำหรับการนำความรู้ไปใช้ในสายงานที่เกี่ยวข้องในอนาคต</p>
             </div>
-        </div>
+        </section>
         
-        <div class="contact-section">
-            <h3>ช่องทางการติดต่อ</h3>
+        <section class="contact-section">
+            <h2>ช่องทางการติดต่อ</h2>
             <ul>
                 <li>📞 080-146-1604</li>
                 <li>📧 66025234@up.ac.th</li>
                 <li>🏠 54 หมู่ 3 ต.บ้านไร่ อ.ดงหลวง จ.นครสวรรค์ 60150</li>
             </ul>
-        </div>
+        </section>
 
-        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg border-l-4 border-orange-400">
-            <h2 className="text-xl font-bold mb-4 text-orange-600">ทักษะและความสามารถ</h2>
-            <div className="space-y-2">
-              <SkillBar label="การแก้ไขปัญหา" value={90} color="orange" />
-              <SkillBar label="ความคิดสร้างสรรค์" value={85} color="orange" />
-              <SkillBar label="การทำงานเป็นทีม" value={95} color="orange" />
+        <section class="details-section">
+            <div class="section">
+                <h2>ทักษะและความสามารถ</h2>
+                <ul>
+                    <li>การแก้ไขปัญหา</li>
+                    <li>ความคิดสร้างสรรค์</li>
+                    <li>การทำงานเป็นทีม</li>
+                </ul>
             </div>
-          </div>
 
-        <div class="languages-section">
-            <h3>ทักษะด้านภาษา</h3>
-            <p>C</p>
-            <p>Java</p>
-        </div>
+            <div class="section">
+                <h2>ทักษะด้านภาษา</h2>
+                <ul>
+                    <li>C</li>
+                    <li>Java</li>
+                </ul>
+            </div>
 
-        <div class="programs-section">
-            <h3>โปรแกรมที่ถนัด</h3>
-            <p>Photoshop</p>
-            <p>Canva</p>
-            <p>Microsoft (Word, Excel)</p>
-        </div>
+            <div class="section">
+                <h2>โปรแกรมที่ถนัด</h2>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Canva</li>
+                    <li>Microsoft Word, Excel</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="education-section">
-            <h3>การศึกษา</h3>
-            <p>2017 - 2020: โรงเรียนลาดยางวิทยาคม สายวิทย์-คณิต</p>
-            <p>2023 - 2024: ปริญญาตรี มหาวิทยาลัยพะเยา สาขา Computer Science</p>
-        </div>
+        <section class="education-section">
+            <h2>การศึกษา</h2>
+            <ul>
+                <li><strong>2017 - 2020:</strong> โรงเรียนลาดยางวิทยาคม สายวิทย์-คณิต</li>
+                <li><strong>2023 - 2024:</strong> ปริญญาตรี มหาวิทยาลัยพะเยา สาขา Computer Science</li>
+            </ul>
+        </section>
 
-        <div class="hobbies-section">
-            <h3>งานอดิเรก</h3>
-            <p>กีฬา</p>
-            <p>ดูหนัง</p>
-            <p>เล่นเกมส์</p>
-        </div>
+        <section class="hobbies-section">
+            <h2>งานอดิเรก</h2>
+            <ul>
+                <li>กีฬา</li>
+                <li>ดูหนัง</li>
+                <li>เล่นเกมส์</li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
