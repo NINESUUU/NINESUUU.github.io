@@ -41,22 +41,24 @@
             color: #ecf0f1;
         }
         
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: -75px auto 20px;
-            overflow: hidden;
-            border: 5px solid #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 2;
+        /* กรอบวงกลมสำหรับรูปโปรไฟล์ */
+        .profile-container {
+             width: 150px;  /* ปรับขนาดตามต้องการ */
+             height: 150px;
+             position: relative;
+             overflow: hidden;
+             border-radius: 50%;
+             margin: 0 auto;  /* จัดกึ่งกลาง */
+             border: 3px solid #fff;  /* เส้นขอบสีขาว */
+             box-shadow: 0 0 10px rgba(0,0,0,0.2);  /* เงา */
         }
-        
-        .profile-pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+
+        /* จัดการรูปภาพภายในกรอบ */
+        .profile-image {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;  /* ทำให้รูปเต็มพื้นที่โดยไม่บิดเบี้ยว */
+             object-position: center;  /* จัดตำแหน่งรูปให้อยู่ตรงกลาง */
         }
         
         .section {
